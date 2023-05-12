@@ -1,0 +1,87 @@
+@use "../_variables" as *;
+@import "../media-queries";
+$input-border-color: rgb(213, 222, 229);
+
+input,
+textarea {
+  padding: 12px;
+  border-radius: 4px;
+  border: none;
+  background-color: $primary-background-color !important;
+
+  &:-webkit-autofill {
+    box-shadow: $primary-dark-color 0px 0px 0px 100px inset;
+    -webkit-text-fill-color: rgb(255, 255, 255);
+  }
+}
+
+button {
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+
+  &:hover {
+    filter: brightness(0.95);
+  }
+}
+
+.contact {
+  align-items: center;
+
+  .socials {
+    display: flex;
+    gap: 56px;
+    width: 100%;
+    justify-content: center;
+
+    @include tablet {
+      gap: 24px;
+    }
+
+    @include mobile {
+      gap: 16px;
+      flex-direction: column;
+      width: min-content !important;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.7;
+      }
+
+      p {
+        font-size: 1.05rem;
+      }
+    }
+  }
+}
+
+.subtitle {
+  text-align: center;
+}
+
+.highlight-text {
+  color: $primary-color;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button-primary {
+  background-color: $primary-color;
+  color: $button-text-color;
+  width: 100%;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}

@@ -1,0 +1,47 @@
+{
+  "name": "portfolio",
+  "author": "julio",
+  "private": false,
+  "homepage": "https://juliosergiofs.github.io/portfolio",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@hookform/error-message": "^2.0.1",
+    "@hookform/resolvers": "^2.8.8",
+    "@iconify/icons-emojione-v1": "^1.2.6",
+    "@iconify/icons-logos": "^1.2.23",
+    "@iconify/icons-mdi": "^1.2.41",
+    "@iconify/icons-skill-icons": "^1.2.1",
+    "framer-motion": "^10.0.1",
+    "i18next": "^22.4.10",
+    "i18next-browser-languagedetector": "^7.0.1",
+    "node-sass": "^8.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-i18next": "^12.2.0",
+    "react-intersection-observer": "^9.4.3",
+    "react-responsive-carousel": "^3.2.23",
+    "react-router-dom": "^6.8.0",
+    "react-scroll-section": "3.1.0"
+  },
+  "devDependencies": {
+    "@iconify/icons-ic": "^1.2.13",
+    "@iconify/icons-material-symbols": "^1.2.30",
+    "@iconify/icons-mingcute": "^1.2.4",
+    "@iconify/react": "^4.1.0",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "@vitejs/plugin-react": "^3.1.0",
+    "gh-pages": "^5.0.0",
+    "sass": "^1.58.0",
+    "typescript": "^4.9.3",
+    "vite": "^4.1.0"
+  }
+}

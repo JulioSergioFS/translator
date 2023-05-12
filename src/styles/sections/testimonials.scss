@@ -1,0 +1,73 @@
+@use "../_variables" as *;
+@import "../media-queries";
+
+.testimonials {
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  &_item {
+    &_content {
+      background-color: $primary-background-color;
+      border: 1px solid $divider-background-color;
+      border-radius: 8px;
+      text-align: left;
+      padding: 40px;
+      height: 300px !important;
+      width: 700px !important;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between !important;
+      padding: 24px;
+      gap: 16px;
+
+      @include mobile {
+        padding: 0;
+        background: none;
+        border: none;
+        height: max-content !important;
+        width: 100% !important;
+      }
+
+      .description {
+        font-size: 1.1rem;
+        color: $secondary-text-color;
+      }
+
+      .profile {
+        display: flex;
+        gap: 16px;
+        width: max-content;
+
+        @include mobile {
+          width: auto;
+        }
+
+        .logo {
+          height: 70px;
+          width: 70px;
+          border-radius: 50%;
+          padding: 3px;
+          border: 1px solid $primary-color;
+        }
+
+        .info {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 4px;
+
+          .name {
+            font-size: 1.25rem;
+          }
+
+          .role {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}

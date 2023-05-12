@@ -1,0 +1,109 @@
+@use "../_variables" as *;
+@import "../media-queries";
+
+@mixin animate($animation, $duration, $method, $times) {
+  animation: $animation $duration $method $times;
+}
+
+@mixin keyframes($name) {
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+.home {
+  padding-top: 56px;
+  height: 720px;
+  position: relative;
+  align-items: center;
+  width: 100% !important;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.8) 20%,
+      rgba($color: $primary-color, $alpha: 0.1) 100%
+    ),
+    url(https://imgur.com/s671HHZ.jpg);
+  background-repeat: no-repeat;
+  background-size: 2400px;
+
+  @keyframes spin {
+    0%,
+    100% {
+      background-position: 50% 50%;
+    }
+    25% {
+      background-position: 52% 46%;
+    }
+    50% {
+      background-position: 54% 50%;
+    }
+    75% {
+      background-position: 52% 54%;
+    }
+  }
+  animation: spin 4.5s linear infinite;
+
+  @include desktop-lg {
+    height: 540px;
+    background-size: 1900px;
+  }
+
+  @include tablet {
+    height: 600px;
+  }
+
+  @include mobile {
+    background-size: 700px;
+    animation: spin 15s linear infinite;
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.8) 20%,
+        rgba($color: $primary-color, $alpha: 0.1) 100%
+      ),
+      url(https://i.imgur.com/hh2tkeh.jpg);
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 8px;
+
+    @include mobile {
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 3rem;
+      color: #efefef;
+      padding: 0 16px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      padding: 0 40px;
+    }
+  }
+
+  .down-arrow {
+    position: absolute;
+    cursor: pointer;
+
+    @keyframes up-and-down {
+      0%,
+      100% {
+        bottom: 4px;
+      }
+      50% {
+        bottom: 12px;
+      }
+    }
+    animation: up-and-down 1.5s linear infinite;
+  }
+}
+
+.hidden {
+  opacity: 0;
+}

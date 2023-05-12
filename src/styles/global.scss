@@ -1,0 +1,135 @@
+@use "variables" as *;
+@import "media-queries";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+body {
+  color: $text-color;
+  height: 100vh;
+}
+
+a,
+body,
+input,
+button,
+textarea {
+  font: 400 16px "Roboto", sans-serif;
+  color: $text-color;
+  text-decoration: none;
+}
+
+label {
+  font-size: 1.05rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+a,
+b,
+p,
+h4 {
+  font-size: 1.2rem;
+}
+
+li {
+  font-size: 1.1rem;
+}
+
+button {
+  font-weight: bold;
+}
+
+#root {
+  height: 100vh;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  background-color: $primary-background-color;
+}
+
+.section {
+  width: 100%;
+  padding: 80px 40px;
+  display: flex;
+  justify-content: center;
+
+  @include desktop-lg {
+    padding: 64px 40px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+
+    @include tablet {
+      width: 100%;
+    }
+
+    .title {
+      padding-bottom: 40px;
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    .title-variant {
+      padding-bottom: 32px;
+      font-size: 1.6rem;
+      text-align: center;
+    }
+  }
+}
+
+.home-section {
+  height: 720px;
+  padding: 0;
+
+  @include desktop-lg {
+    height: 540px;
+  }
+
+  @include tablet {
+    height: 600px;
+  }
+}
+
+.background-primary {
+  background-color: $primary-background-color;
+}
+
+.background-secondary {
+  background-color: $secondary-background-color;
+}
+
+.divider {
+  height: 1px;
+  width: 100%;
+  background-color: $divider-background-color;
+}
+
+.text-secondary {
+  color: $secondary-text-color;
+}
+
+.text-highlight {
+  color: $highlight-text-color;
+  font-size: 1.4rem !important;
+  font-weight: bold;
+}
+
+.redirect-link {
+  cursor: pointer;
+  color: $highlight-text-color;
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-weight: bold;
+}

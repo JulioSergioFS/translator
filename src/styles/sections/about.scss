@@ -1,0 +1,72 @@
+@use "../_variables" as *;
+@import "../media-queries";
+
+@mixin animate($animation, $duration, $method, $times) {
+  animation: $animation $duration $method $times;
+}
+
+@mixin keyframes($name) {
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+.about {
+  display: flex;
+  flex-direction: row !important;
+  width: 1200px;
+
+  @include mobile {
+    flex-direction: column !important;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+    @include mobile {
+      padding-top: 24px;
+      width: 100%;
+    }
+
+    .text-content {
+      gap: 24px;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .logos {
+      padding-top: 32px;
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+    }
+  }
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50% !important;
+
+  @include mobile {
+    width: 100% !important;
+  }
+
+  .my-photo {
+    height: 320px;
+    width: min-content;
+    border: 1px solid $primary-color;
+    border-radius: 50%;
+    padding: 4px;
+
+    filter: drop-shadow(0 0 3em rgba($color: $primary-color, $alpha: 0.3));
+
+    @include mobile {
+      height: 260px;
+    }
+  }
+}

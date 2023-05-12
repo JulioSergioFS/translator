@@ -1,0 +1,124 @@
+{
+  "header": {
+    "home": "Home",
+    "about": "Sobre",
+    "portfolio": "Portfólio",
+    "testimonials": "Depoimentos",
+    "contact": "Contato"
+  },
+  "sections": {
+    "home": {
+      "title": "Olá, eu sou o Julio",
+      "subtitle": "Como posso te ajudar?"
+    },
+    "about": {
+      "title": "Sobre mim",
+      "text1": "Sou um Desenvolvedor Frontend Júnior procurando por novas oportunidades. Já desenvolvi aplicações para diversas empresas, onde colaborei na criação de landing pages, e-commerces e sites de cursos online, o que me ensinou muito sobre o valor do meu trabalho e como ele pode beneficiar meus clientes.",
+      "text2": "Atualmente, estou aprofundando meus conhecimentos em ReactJS e Typescript. Também tenho compartilhado meu conhecimento por meio de artigos, com textos publicados sobre programação e desenvolvimento pessoal.",
+      "link": "Leia meus artigos",
+      "alt": "Minha foto (criador deste site)"
+    },
+    "portfolio": {
+      "title": "Portfólio",
+      "subtitle": "Trabalhando como estagiário e desenvolvedor front-end, trabalhei em diversos projetos para diversar empresas. Segue a lista abaixo.",
+      "description": {
+        "courses": {
+          "name": "Site de cursos online",
+          "text1": "Site com videoaulas incluindo um blog com posts dos alunos, feito inteiro em Javascript.",
+          "text2": "A aplicação proporcionou aos alunos acesso fácil ao conteúdo e uma interface harmônica."
+        },
+        "smart-monitor": {
+          "name": "Smart Monitor",
+          "text1": "Aplicação de gerenciamento de maquinário de fábricas em tempo real.",
+          "text2": "Ela facilita o gerenciamento e inspeção das máquinas pelo gestor, oferecendo estatísticas da produção."
+        },
+        "landing": {
+          "name": "Landing Page",
+          "text1": "Página com sessões de questionário e compra feita em Material UI e usando Typeform para formulários.",
+          "text2": "A aplicação é uma excelente apresentação da empresa, e seus questionários dão insights para os que preenchem."
+        },
+        "ecommerce": {
+          "name": "E-commerce",
+          "text1": "Site de comércio eletrônico personalizado, com sessões de pagamento, entrega e relatórios, feito usando Typescript e React Hook Forms.",
+          "text2": "O projeto ajudou a automatizar vários processos anteriormente manuais."
+        },
+        "quiz": {
+          "name": "Questionário",
+          "text1": "Quiz de perguntas de segurança do trabalho, com CRUD de perguntas e respostas.",
+          "text2": "O questionário contribuiu para a garantia do entendimento dos funcionários quanto à segurança."
+        },
+        "custom-crud": {
+          "name": "Custom Crud Dash",
+          "text1": "Pacote para a automação da criação de CRUDs, com tabelas e formulários, usando Material UI.",
+          "text2": "O pacote agiliza a criação de novos CRUDs e permite uma alta personalização."
+        }
+      },
+      "visit": "Visitar site"
+    },
+    "testimonials": {
+      "title": "Depoimentos",
+      "alt": "Foto de ",
+      "list": {
+        "bruno": {
+          "text": "Como Tech Lead, eu tive a oportunidade de trabalhar com Júlio em vários projetos. Ele sempre demonstrou excelentes habilidades técnicas e criativas. Além disso, Júlio tem uma incrível capacidade de colaborar com outros membros da equipe. Comprometimento e dedicação com os projetos são pontos fortes do Júlio. Ele é extremamente confiável, organizado e sempre busca o melhor resultado possível para o projeto. Eu recomendo ele sem reservas para qualquer posição de desenvolvedor Frontend. Ele fará uma grande diferença em qualquer equipe que ele se juntar.",
+          "fullName": "Bruno Chagas",
+          "role": "Tech Lead e Desenvolvedor Full Stack"
+        },
+        "gustavo": {
+          "text": "Eu recomendo fortemente o Julio como desenvolvedor front-end altamente qualificado e comprometido. Ele possui habilidades excepcionais em ReactJs, Nexts Js, Material UI e prototipação de interfaces no Figma, sempre tendo em mente a experiência do usuário. Além disso, Julio é altamente comunicativo e proativo, garantindo que todas as partes envolvidas no projeto estejam sempre atualizadas e em sintonia. Portanto, recomendo fortemente Julio como um desenvolvedor front-end excepcional que trará um grande valor para a sua equipe e seus projetos.",
+          "fullName": "Gustavo Henrique",
+          "role": "Desenvolvedor Full Stack"
+        },
+        "ruben": {
+          "text": "Tive a oportunidade de trabalhar e aprender com o Júlio durante o tempo em que trabalhamos juntos. Julio é uma pessoa muito dedicada, atenciosa, ótimo companheiro de equipe, se relaciona muito bem, procura estar sempre aprendendo coisas novas e sempre solucionando os problemas da melhor forma possível. Tenho total confiança no esforço dele em usar seus conhecimentos em desenvolvimento front-end, pois é um profissional muito focado e está sempre buscando evoluir.",
+          "fullName": "Ruben Micael",
+          "role": "Desenvolvedor Frontend"
+        }
+      }
+    },
+    "contact": {
+      "title": "Entre em Contato",
+      "subtitle": "Preencha os campos abaixo para entrar em contato",
+      "fields": {
+        "name": {
+          "label": "Nome",
+          "placeholder": "Escreva seu nome",
+          "errors": {
+            "required": "O nome é obrigatório"
+          }
+        },
+        "email": {
+          "label": "E-mail",
+          "placeholder": "email@exemplo.com",
+          "errors": {
+            "email": "O e-mail deve ser um endereço de e-mail válido",
+            "required": "O e-mail é obrigatório"
+          }
+        },
+        "subject": {
+          "label": "Assunto",
+          "placeholder": "Escreva o assunto aqui",
+          "errors": {
+            "required": "O assunto é obrigatório"
+          }
+        },
+        "message": {
+          "label": "Mensagem",
+          "placeholder": "Escreva sua mensagem aqui",
+          "errors": {
+            "required": "A mensagem é obrigatória"
+          }
+        }
+      },
+      "subjects": {
+        "email": "Ol%C3%A1%21",
+        "number": "Ol%C3%A1+Julio%21"
+      },
+      "button": "Enviar mensagem",
+      "messages": {
+        "success": "Email enviado com successo",
+        "wrong": "Erro ao enviar email"
+      }
+    }
+  }
+}
