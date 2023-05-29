@@ -23,11 +23,11 @@
   }
 
   .card {
-    background-color: $secondary-background-color;
+    background-color: $primary-background-color;
     border: 1px solid $divider-background-color;
     border-radius: 8px;
     display: flex;
-    height: 360px;
+    height: 340px;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -40,11 +40,11 @@
     }
 
     @include mobile {
-      height: 410px;
+      height: 350px;
     }
 
     .logo {
-      height: 80px;
+      height: 72px;
       width: auto;
       margin-bottom: 8px;
 
@@ -59,6 +59,18 @@
       align-items: center;
       width: 100%;
       gap: 10px;
+
+      .subtitle-text {
+        color: $highlight-text-color;
+        font-size: 0.95rem;
+        font-weight: lighter;
+        text-transform: uppercase;
+      }
+    }
+
+    .links {
+      display: flex;
+      gap: 24px;
     }
 
     .carousel-description {

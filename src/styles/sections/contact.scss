@@ -32,7 +32,7 @@ button {
 
   .socials {
     display: flex;
-    gap: 56px;
+    gap: 80px;
     width: 100%;
     justify-content: center;
 
@@ -41,9 +41,12 @@ button {
     }
 
     @include mobile {
-      gap: 16px;
       flex-direction: column;
       width: min-content !important;
+    }
+
+    div {
+      width: 250px !important;
     }
 
     a {

@@ -1,7 +1,5 @@
 import googleGmail from "@iconify/icons-logos/google-gmail";
 import whatsappIcon from "@iconify/icons-logos/whatsapp-icon";
-import instagramIcon from "@iconify/icons-skill-icons/instagram";
-import linkedinIcon from "@iconify/icons-skill-icons/linkedin";
 import { Icon } from "@iconify/react";
 import { AnimateComponent } from "../components/AnimateComponent";
 import useLocales from "../hooks/useLocales";
@@ -11,11 +9,6 @@ export function Contact({ isMobile }: { isMobile?: boolean }) {
   const { t } = useLocales();
 
   const socials = [
-    {
-      name: "Linkedin",
-      link: "https://www.linkedin.com/in/julio-sergio-ferreira-silva",
-      icon: <Icon icon={linkedinIcon} height={22} />,
-    },
     {
       name: "juliosecondary@gmail.com",
       link: `mailto:juliosecondary@gmail.com?subject=${t(
@@ -30,14 +23,9 @@ export function Contact({ isMobile }: { isMobile?: boolean }) {
       )}`,
       icon: <Icon icon={whatsappIcon} height={22} />,
     },
-    {
-      name: "Instagram",
-      link: "https://www.instagram.com/julio_sergiofs/",
-      icon: <Icon icon={instagramIcon} height={22} />,
-    },
   ];
 
-  const socialsMobile = [socials[0], socials[3], socials[2], socials[1]];
+  const socialsMobile = [socials[1], socials[0]];
 
   return (
     <div className="content contact">

@@ -20,32 +20,18 @@
   background: linear-gradient(
       0deg,
       rgba(0, 0, 0, 0.8) 20%,
-      rgba($color: $primary-color, $alpha: 0.1) 100%
+      rgba(0, 0, 0, 0.3) 100%
     ),
-    url(https://imgur.com/s671HHZ.jpg);
+    url(https://i.imgur.com/glIQwNE.jpg);
+  background-color: #000 !important;
   background-repeat: no-repeat;
   background-size: 2400px;
-
-  @keyframes spin {
-    0%,
-    100% {
-      background-position: 50% 50%;
-    }
-    25% {
-      background-position: 52% 46%;
-    }
-    50% {
-      background-position: 54% 50%;
-    }
-    75% {
-      background-position: 52% 54%;
-    }
-  }
-  animation: spin 4.5s linear infinite;
+  background-position-x: 50%;
+  background-repeat: no-repeat !important;
 
   @include desktop-lg {
     height: 540px;
-    background-size: 1900px;
+    background-size: 1600px;
   }
 
   @include tablet {
@@ -53,14 +39,15 @@
   }
 
   @include mobile {
-    background-size: 700px;
+    background-size: 400px !important;
     animation: spin 15s linear infinite;
     background: linear-gradient(
         0deg,
-        rgba(0, 0, 0, 0.8) 20%,
-        rgba($color: $primary-color, $alpha: 0.1) 100%
+        rgba(0, 0, 0, 0.7) 20%,
+        rgba(0, 0, 0, 0.7) 100%
       ),
-      url(https://i.imgur.com/hh2tkeh.jpg);
+      url(https://i.imgur.com/glIQwNE.jpg);
+    background-position: 50% 50% !important;
   }
 
   .info {
@@ -73,6 +60,17 @@
 
     @include mobile {
       text-align: center;
+    }
+
+    .flags {
+      height: 40px;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+
+      @include mobile {
+        height: 48px;
+      }
     }
 
     h2 {

@@ -1,5 +1,3 @@
-import githubIcon from "@iconify/icons-mdi/github";
-import { Icon } from "@iconify/react";
 import { useScrollSections } from "react-scroll-section";
 import { sections } from "../constants/header";
 import useLocales from "../hooks/useLocales";
@@ -35,18 +33,9 @@ export function Header({
       )}
       <li className="menu">
         <ul className="socials">
-          <li>
-            <LanguagePopover />
-          </li>
-          <li>
-            <a target="_blank" href="https://github.com/JulioSergioFS/">
-              <Icon
-                icon={githubIcon}
-                color="#fefefe"
-                height={isMobile ? 32 : 24}
-              />
-            </a>
-          </li>
+          {hasBackground ? (
+            <LanguagePopover hasBackground={hasBackground} />
+          ) : null}
         </ul>
       </li>
     </ul>

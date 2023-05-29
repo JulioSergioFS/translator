@@ -2,8 +2,8 @@
   "header": {
     "home": "Home",
     "about": "About",
+    "services": "Services",
     "portfolio": "Portfolio",
-    "testimonials": "Testimonials",
     "contact": "Contact Me"
   },
   "sections": {
@@ -13,66 +13,51 @@
     },
     "about": {
       "title": "About me",
-      "text1": "I am a Junior Frontend Developer looking for new opportunities. I have developed applications for various companies, where I collaborated in the creation of landing pages, e-commerces and online course websites, which taught me a lot about the value of my work and how it can benefit my clients.",
-      "text2": "Currently, I am deepening my knowledge in ReactJS and Typescript. I also have been sharing my knowledge through articles, with published texts about programming and personal development.",
-      "link": "Read my articles",
+      "text1": "Hello! I am an English-Brazilian Portuguese translator with a strong affinity for languages since childhood. Over the years, I have developed skills that have allowed me to achieve proficiency in English, including reading, writing, and comprehending texts. I have been writing articles in Portuguese and English and translating websites, which have helped me enhance my translation abilities.",
+      "text2": "Furthermore, my background as a programmer enables me to accurately understand and translate technical materials such as manuals, user guides, and API documentation. I am also capable of adapting websites to provide a comprehensive experience for Brazilian users.",
       "alt": "My photo (creator of this website)"
+    },
+    "services": {
+      "title": "Services",
+      "list": {
+        "website": "Website Translation",
+        "document": "Document Translation",
+        "localization": "Localization",
+        "subtitle": "Subtitle Creation",
+        "documentation": "Technical Documentation Translation",
+        "software": "Software Translation",
+        "review": "Proofreading and Editing Translation",
+        "marketing": "Advertising Translation"
+      }
     },
     "portfolio": {
       "title": "Portfolio",
-      "subtitle": "Working as an intern and front-end developer, I worked on several projects for different companies. Here is the list below.",
+      "subtitle": "Here are a few examples of projects I have worked on, in both Portuguese and English. You can see them in their respective languages by clicking on the flags.",
       "description": {
-        "courses": {
-          "name": "Online courses website",
-          "text1": "Online courses and video lessons website, including a blog with posts from students, entirely made in Javascript.",
-          "text2": "The application provided students with easy access to content and a harmonious interface."
+        "portfolio": {
+          "title": "Portfolio",
+          "subtitle": "website",
+          "text": "A Website portfolio featuring sections dedicated to a concise personal biography, a portfolio highlighting work experiences, and testimonials."
         },
-        "smart-monitor": {
-          "name": "Smart Monitor",
-          "text1": "Real-time factory machinery management application.",
-          "text2": "It facilitates the manager's management and inspection of the machines, offering production statistics."
+        "forever-learn": {
+          "title": "Forever Learning",
+          "subtitle": "website",
+          "text": "A Website for the fictional company Forever Learning, entirely in English, featuring sections with company description, plans, and testimonials."
         },
-        "landing": {
-          "name": "Landing Page",
-          "text1": "Page with questionnaire and purchase sections made in Material UI and using Typeform for forms.",
-          "text2": "The application is an excellent presentation of the company, and its questionnaires provide insights for those who fill them out."
+        "motivation": {
+          "title": "Breaking Free From Motivation",
+          "subtitle": "article",
+          "text": "An Article on how to be more productive without relying on motivation, with personal examples."
         },
-        "ecommerce": {
-          "name": "E-commerce",
-          "text1": "Custom e-commerce website with payment, delivery, and reports sections, made using Typescript and React Hook Forms.",
-          "text2": "The project helped automate several previously manual processes."
+        "programming": {
+          "title": "What is programming?",
+          "subtitle": "article",
+          "text": "An Article introducing the concept of programming explained casually with an informal language style."
         },
-        "quiz": {
-          "name": "Quizz",
-          "text1": "Workplace safety quiz with CRUD of questions and answers.",
-          "text2": "The questionnaire contributed to ensuring employees' understanding of safety."
-        },
-        "custom-crud": {
-          "name": "Custom Crud Dash",
-          "text1": "Package for automating the creation of CRUDs, with tables and forms, using Material UI.",
-          "text2": "The package speeds up the creation of new CRUDs and allows high customization."
-        }
-      },
-      "visit": "Visit website"
-    },
-    "testimonials": {
-      "title": "Testimonials",
-      "alt": "Photo of ",
-      "list": {
-        "bruno": {
-          "text": "As a Tech Lead, I had the opportunity to work with Julio on several projects. He has always demonstrated excellent technical and creative skills. In addition, Julio has an incredible ability to collaborate with other team members. Commitment and dedication to projects are Julio's strong points. He is extremely reliable, organized and always seeks the best possible outcome for the project. I wholeheartedly recommend him for any Frontend developer position. He will make a great difference in any team he joins.",
-          "fullName": "Bruno Chagas",
-          "role": "Tech Lead and Full Stack Developer"
-        },
-        "gustavo": {
-          "text": "I strongly recommend Julio as a highly skilled and committed front-end developer. He has exceptional skills in ReactJs, Nexts Js, Material UI, and interface prototyping in Figma, always keeping the user experience in mind. Additionally, Julio is highly communicative and proactive, ensuring that all parties involved in the project are always up-to-date and in sync. Therefore, I strongly recommend Julio as an exceptional front-end developer who will bring great value for your team and projects",
-          "fullName": "Gustavo Henrique",
-          "role": "Full Stack Developer"
-        },
-        "ruben": {
-          "text": "I had the opportunity to work and learn with Julio during the time we worked together. Julio is a very dedicated and attentive person, a great co-worker who relates very well with others. He always seeks to learn new things and solve problems in the best possible way. I have complete confidence in his efforts to use his front-end development knowledge, as he is a very focused professional who is always seeking to evolve.",
-          "fullName": "Ruben Micael",
-          "role": "Frontend Developer"
+        "bug-bounty": {
+          "title": "Bug Bounty Tips",
+          "subtitle": "article",
+          "text": "An Article presenting a compilation of tips for finding Bug Bounties, which are rewards for reporting security vulnerabilities on websites."
         }
       }
     },

@@ -6,7 +6,11 @@ import { Dialog } from "./Dialog";
 
 // ----------------------------------------------------------------------
 
-export default function LanguagePopover() {
+export default function LanguagePopover({
+  hasBackground,
+}: {
+  hasBackground: boolean;
+}) {
   const [open, setOpen] = useState(false);
   const { allLang, currentLang, onChangeLang } = useLocales();
 
@@ -17,35 +21,29 @@ export default function LanguagePopover() {
 
   return (
     <div className="languages-container">
-      {!open ? (
-        <div className="dialog-button" onClick={() => setOpen(!open)}>
-          {currentLang.icon}
-        </div>
-      ) : null}
       <Dialog
-        show={open}
+        hasBackground={hasBackground}
         onClickOutside={() => {
           setOpen(false);
         }}
       >
-        {sortedLangs.map((option, index) => (
+        {(open ? sortedLangs : [sortedLangs[0]]).map((option, index) => (
           <div
             key={option.value}
             className="item"
             // selected={option.value === currentLang.value}
             onClick={() => {
               onChangeLang(option.value);
-              setOpen(false);
+              setOpen(!open);
             }}
             // style={{ py: 1, px: 2.5 }}
           >
-            <div>{option.icon}</div>
+            <div className="item_info">
+              <div className="flag">{option.icon}</div>
+              <p>{option.label}</p>
+            </div>
             {index === 0 ? (
-              <Icon
-                icon={keyboardArrowDownRounded}
-                height={28}
-                className="down-arrow"
-              />
+              <Icon icon={keyboardArrowDownRounded} height={28} />
             ) : null}
           </div>
         ))}

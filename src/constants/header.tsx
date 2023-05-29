@@ -2,7 +2,7 @@ import { AboutMe } from "../sections/AboutMe";
 import { Contact } from "../sections/Contact";
 import { Home } from "../sections/Home";
 import { Portfolio } from "../sections/Portfolio";
-import { Testimonials } from "../sections/Testimonials";
+import { Services } from "../sections/Services";
 
 export const sections = [
   { id: "1", name: "header.home", component: <Home />, bgColor: "secondary" },
@@ -14,15 +14,15 @@ export const sections = [
   },
   {
     id: "3",
-    name: "header.portfolio",
-    component: <Portfolio />,
+    name: "header.services",
+    component: <Services />,
     bgColor: "primary",
     haveIsMobile: true,
   },
   {
     id: "4",
-    name: "header.testimonials",
-    component: <Testimonials />,
+    name: "header.portfolio",
+    component: <Portfolio />,
     bgColor: "secondary",
     haveIsMobile: true,
   },

@@ -1,5 +1,6 @@
 import { Carousel } from "react-responsive-carousel";
 import { AnimateComponent } from "../components/AnimateComponent";
+import { PortfolioCard } from "../components/PortfolioCard";
 import { projects } from "../constants/project";
 import useLocales from "../hooks/useLocales";
 import "../styles/sections/portfolio.scss";
@@ -19,7 +20,7 @@ export function Portfolio({ isMobile }: { isMobile?: boolean }) {
 
       <AnimateComponent
         variants={{
-          visible: { opacity: 1, y: 0, transition: { duration: 0.4 } },
+          visible: { opacity: 1, y: 0, transition: { duration: 0.3 } },
         }}
       >
         <p className="subtitle">{t("sections.portfolio.subtitle")}</p>
@@ -47,37 +48,7 @@ export function Portfolio({ isMobile }: { isMobile?: boolean }) {
           )}
         >
           {projects.map((project) => (
-            <div className="card" key={project.smallName}>
-              <div className="company-text">
-                <img
-                  className="logo"
-                  src={project.image}
-                  alt={t(
-                    `sections.portfolio.description.${project.smallName}.name`
-                  )}
-                />
-                <h4>
-                  {t(
-                    `sections.portfolio.description.${project.smallName}.name`
-                  )}
-                </h4>
-                <p className="carousel-description">
-                  {t(
-                    `sections.portfolio.description.${project.smallName}.text1`
-                  )}
-                </p>
-                <p className="carousel-description">
-                  {t(
-                    `sections.portfolio.description.${project.smallName}.text2`
-                  )}
-                </p>
-              </div>
-              {project.url ? (
-                <a className="redirect-link" target="_blank" href={project.url}>
-                  {t("sections.portfolio.visit")}
-                </a>
-              ) : null}
-            </div>
+            <PortfolioCard project={project} />
           ))}
         </Carousel>
       </AnimateComponent>

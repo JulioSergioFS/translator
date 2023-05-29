@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 
 export function Dialog(props: any) {
   const ref = useRef(null);
-  const { onClickOutside } = props;
+  const { onClickOutside, hasBackground } = props;
 
   useEffect(() => {
     const handleClickOutside = (event: any) => {
@@ -18,7 +18,12 @@ export function Dialog(props: any) {
   }, [onClickOutside]);
 
   return (
-    <div ref={ref} className={`dialog-list${props.show ? " open" : ""}`}>
+    <div
+      ref={ref}
+      className={`dialog-list open${
+        !hasBackground ? " border-and-background" : ""
+      }`}
+    >
       {props.children}
     </div>
   );
